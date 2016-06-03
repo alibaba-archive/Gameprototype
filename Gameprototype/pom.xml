@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>gameprototype</groupId>
+    <artifactId>gameprototype</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>DataServer</module>
+        <module>LogicServer</module>
+        <module>Gamedecode</module>
+        <!--<module>AiBator</module>-->
+    </modules>
+
+    <properties>
+        <java-version>1.7</java-version>
+        <junit-version>4.8.2</junit-version>
+        <org.springframework-version>3.2.4.RELEASE</org.springframework-version>
+        <jackson-mapper-asl-version>1.9.12</jackson-mapper-asl-version>
+        <jackson-core-asl-version>1.9.12</jackson-core-asl-version>
+        <mysql-connector-java-version>5.1.8</mysql-connector-java-version>
+        <org.mybatis-version>3.2.7</org.mybatis-version>
+        <org.mybatis-spring-version>1.2.2</org.mybatis-spring-version>
+        <opensymphony-version>2.4.2</opensymphony-version>
+        <freemarker-version>2.3.9</freemarker-version>
+        <c3p0-version>0.9.1.2</c3p0-version>
+        <commons-collections-version>1.0</commons-collections-version>
+        <commons-fileupload-version>1.2.2</commons-fileupload-version>
+        <org.apache.commons-version>3.1</org.apache.commons-version>
+        <commons-codec-version>1.6</commons-codec-version>
+        <dom4j-version>1.6.1</dom4j-version>
+        <javax.servlet-version>1.2</javax.servlet-version>
+        <aspectjweaver-version>1.6.6</aspectjweaver-version>
+        <slf4j-log4j12-version>1.6.6</slf4j-log4j12-version>
+        <log4j-version>1.2.16</log4j-version>
+        <javax.servlet-jsp-version>2.0</javax.servlet-jsp-version>
+        <cglib-version>2.2.2</cglib-version>
+        <slf4j-api-version>1.6.6</slf4j-api-version>
+        <aopalliance-version>1.0</aopalliance-version>
+        <cglib-nodep-version>3.1</cglib-nodep-version>
+        <flex-version>4.7.0</flex-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
+            <type>jar</type>
+        </dependency>
+        <!-- with spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-instrument</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-instrument-tomcat</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        <!--springmvc 转 Json-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson-mapper-asl-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>${jackson-core-asl-version}</version>
+        </dependency>
+        <!--freemarker-->
+        <dependency>
+            <groupId>freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker-version}</version>
+        </dependency>
+        <!-- with mybatis-spring -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${org.mybatis-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${org.mybatis-spring-version}</version>
+        </dependency>
+
+        <!--试试ibatis
+        <dependency>
+            <groupId>org.apache.ibatis</groupId>
+            <artifactId>ibatis-sqlmap</artifactId>
+            <version>3.0-beta-10</version>
+        </dependency>
+        -->
+        <!-- jdbc driver -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-java-version}</version>
+        </dependency>
+        <!-- connect pool with c3p0 -->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>${c3p0-version}</version>
+        </dependency>
+        <!-- apache commons jar -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${org.apache.commons-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec-version}</version>
+        </dependency>
+        <!-- analyze xml use dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>${dom4j-version}</version>
+        </dependency>
+        <!-- about servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${javax.servlet-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <!-- memcached -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.spy</groupId>
+            <artifactId>memcached</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
+        <!--<dependency>-->
+        <!--<groupId>com.danga</groupId>-->
+        <!--<artifactId>memcached</artifactId>-->
+        <!--<version>2.0.1</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+        <!--<groupId>memcached-util</groupId>-->
+        <!--<artifactId>memcached</artifactId>-->
+        <!--<version>1.1</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.fckeditor</groupId>
+            <artifactId>java-core</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20131018</version>
+        </dependency>
+
+        <!--<dependency>-->
+        <!--<groupId>oscache</groupId>-->
+        <!--<artifactId>oscache</artifactId>-->
+        <!--<version>2.2</version>-->
+        <!--</dependency>-->
+        <!--jerson -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.18.1</version>
+        </dependency>
+        <!--jcaptcha -->
+        <dependency>
+            <groupId>com.rogiel.httpchannel.captcha</groupId>
+            <artifactId>httpchannel-captcha-captchatrader</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- -->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance-version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <!-- -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>${cglib-nodep-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>${cglib-nodep-version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <!---->
+        <dependency>
+            <groupId>commons-attributes</groupId>
+            <artifactId>commons-attributes</artifactId>
+            <version>2.1</version>
+            <classifier>javadoc</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>20030211.134440</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-chain</groupId>
+            <artifactId>commons-chain</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.3.1</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-compress</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>20050911</version>
+        </dependency>
+
+
+        <!---->
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.9</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.9</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <!---->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>2.0</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-discovery</groupId>
+            <artifactId>commons-discovery</artifactId>
+            <version>0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-discovery</groupId>
+            <artifactId>commons-discovery</artifactId>
+            <version>0.5</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-el</groupId>
+            <artifactId>commons-el</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-el</groupId>
+            <artifactId>commons-el</artifactId>
+            <version>1.0</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1-jenkins-1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1-jenkins-1</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-math</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-math</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>1.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.6</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>com.adobe.flex.compiler</groupId>
+            <artifactId>flex-rds-server</artifactId>
+            <version>4.0.1.21287</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flex.blazeds</groupId>
+            <artifactId>flex-messaging-common</artifactId>
+            <version>${flex-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flex.blazeds</groupId>
+            <artifactId>flex-messaging-common</artifactId>
+            <version>${flex-version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flex.blazeds</groupId>
+            <artifactId>flex-messaging-core</artifactId>
+            <version>${flex-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flex.blazeds</groupId>
+            <artifactId>flex-messaging-core</artifactId>
+            <version>${flex-version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>hessian</groupId>
+            <artifactId>hessian</artifactId>
+            <version>3.2.1</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>hessian</groupId>
+            <artifactId>hessian</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>com.github.jedis-lock</groupId>
+            <artifactId>jedis-lock</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!---->
+        <!--<dependency>-->
+            <!--<groupId>io.netty</groupId>-->
+            <!--<artifactId>netty-all</artifactId>-->
+            <!--<version>4.0.19.Final</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.0.Beta6</version>
+        </dependency>
+
+        <!--redis 客户端-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>proxool</groupId>
+            <artifactId>proxool</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!--slf4j-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.5.2.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.orm</artifactId>
+            <version>3.2.2.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+    </dependencies>
+</project>

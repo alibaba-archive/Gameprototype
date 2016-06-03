@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE configuration
+            PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+            "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="org.gameprototype.dao.mapper.AccountMapper" alias="ACCOUNT" />
+    </typeAliases>
+    <mappers>
+        <mapper resource="org/gameprototype/dao/sqlmap/AccountMapper.xml"/>
+        <mapper resource="org/gameprototype/dao/sqlmap/Equipmentmapper.xml"/>
+        <mapper resource="org/gameprototype/dao/sqlmap/PlayerEquipMapper.xml"/>
+        <mapper resource="org/gameprototype/dao/sqlmap/PlayerModelMapper.xml"/>
+        <mapper resource="org/gameprototype/dao/sqlmap/PlayerRoleMapper.xml"/>
+    </mappers>
+</configuration>
+

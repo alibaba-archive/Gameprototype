@@ -1,0 +1,8 @@
+option java_package = "org.gameprototype.proto.src";
+
+message SocketModelPB {
+    required int32 type = 1;
+    required int32 area = 2;
+    required int32 command = 3;
+    required bytes content=4;
+}

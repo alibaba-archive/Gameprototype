@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 2d87016f3fa35064ea2cd5b988b4d5ad
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: CATRigCATRigHead
+    100002: CATRigLArm1
+    100004: CATRigLArm2
+    100006: CATRigLArmCollarbone
+    100008: CATRigLArmPalm
+    100010: CATRigLLeg1
+    100012: CATRigLLeg2
+    100014: CATRigLLegAnkle
+    100016: CATRigLLegPlatform
+    100018: CATRigPalmBone001
+    100020: CATRigPalmBone001 1
+    100022: CATRigPalmBone001Bone001
+    100024: CATRigPalmBone001Bone001 1
+    100026: CATRigPalmBone002
+    100028: CATRigPalmBone002 1
+    100030: CATRigPalmBone002Bone001
+    100032: CATRigPalmBone002Bone001 1
+    100034: CATRigPelvis
+    100036: CATRigRArm1
+    100038: CATRigRArm2
+    100040: CATRigRArmCollarbone
+    100042: CATRigRArmPalm
+    100044: CATRigRLeg1
+    100046: CATRigRLeg2
+    100048: CATRigRLegAnkle
+    100050: CATRigRLegPlatform
+    100052: CATRigSpine
+    100054: CATRigSpine1
+    100056: CATRigSpine2
+    100058: CATRigSpine3
+    100060: CATRigSpine4
+    100062: Character001
+    100064: Head_slot
+    100066: LBracers_slot
+    100068: LShoulders_slot
+    100070: RBracers_slot
+    100072: RShoulders_slot
+    100074: ShieldBow_Slot
+    100076: Warrior
+    100078: //RootNode
+    100080: WeaponSlot
+    100082: brace01_002
+    100084: brace01_1
+    100086: brace02_002
+    100088: brace02_1
+    100090: CATRigLLegDigit11
+    100092: CATRigLLegDigit12
+    100094: CATRigRLegDigit11
+    100096: CATRigRLegDigit12
+    100098: helmet01
+    100100: helmet02
+    100102: Shield01
+    100104: Shield02
+    100106: shoulder01_002
+    100108: shoulder01_1
+    100110: shoulder02_002
+    100112: shoulder02_1
+    400000: CATRigCATRigHead
+    400002: CATRigLArm1
+    400004: CATRigLArm2
+    400006: CATRigLArmCollarbone
+    400008: CATRigLArmPalm
+    400010: CATRigLLeg1
+    400012: CATRigLLeg2
+    400014: CATRigLLegAnkle
+    400016: CATRigLLegPlatform
+    400018: CATRigPalmBone001
+    400020: CATRigPalmBone001 1
+    400022: CATRigPalmBone001Bone001
+    400024: CATRigPalmBone001Bone001 1
+    400026: CATRigPalmBone002
+    400028: CATRigPalmBone002 1
+    400030: CATRigPalmBone002Bone001
+    400032: CATRigPalmBone002Bone001 1
+    400034: CATRigPelvis
+    400036: CATRigRArm1
+    400038: CATRigRArm2
+    400040: CATRigRArmCollarbone
+    400042: CATRigRArmPalm
+    400044: CATRigRLeg1
+    400046: CATRigRLeg2
+    400048: CATRigRLegAnkle
+    400050: CATRigRLegPlatform
+    400052: CATRigSpine
+    400054: CATRigSpine1
+    400056: CATRigSpine2
+    400058: CATRigSpine3
+    400060: CATRigSpine4
+    400062: Character001
+    400064: Head_slot
+    400066: LBracers_slot
+    400068: LShoulders_slot
+    400070: RBracers_slot
+    400072: RShoulders_slot
+    400074: ShieldBow_Slot
+    400076: //RootNode
+    400078: Warrior
+    400080: WeaponSlot
+    400082: brace01_002
+    400084: brace01_1
+    400086: brace02_002
+    400088: brace02_1
+    400090: CATRigLLegDigit11
+    400092: CATRigLLegDigit12
+    400094: CATRigRLegDigit11
+    400096: CATRigRLegDigit12
+    400098: helmet01
+    400100: helmet02
+    400102: Shield01
+    400104: Shield02
+    400106: shoulder01_002
+    400108: shoulder01_1
+    400110: shoulder02_002
+    400112: shoulder02_1
+    2300000: brace01_002
+    2300002: brace01_1
+    2300004: brace02_002
+    2300006: brace02_1
+    2300008: helmet01
+    2300010: helmet02
+    2300012: Shield01
+    2300014: Shield02
+    2300016: shoulder01_002
+    2300018: shoulder01_1
+    2300020: shoulder02_002
+    2300022: shoulder02_1
+    3300000: brace01_002
+    3300002: brace01_1
+    3300004: brace02_002
+    3300006: brace02_1
+    3300008: helmet01
+    3300010: helmet02
+    3300012: Shield01
+    3300014: Shield02
+    3300016: shoulder01_002
+    3300018: shoulder01_1
+    3300020: shoulder02_002
+    3300022: shoulder02_1
+    4300000: Warrior
+    4300002: Shield02
+    4300004: Shield01
+    4300006: brace01_002
+    4300008: brace02_002
+    4300010: shoulder02_002
+    4300012: shoulder01_002
+    4300014: helmet01
+    4300016: helmet02
+    4300018: brace02_1
+    4300020: brace01_1
+    4300022: shoulder01_1
+    4300024: shoulder02_1
+    7400000: Fantasy_01_Warrior_29_max2011
+    9500000: //RootNode
+    13700000: Warrior
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

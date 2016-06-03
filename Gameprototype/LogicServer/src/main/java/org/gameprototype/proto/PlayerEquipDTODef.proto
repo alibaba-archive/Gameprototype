@@ -1,0 +1,8 @@
+option java_package = "org.gameprototype.proto.src";
+
+message PlayerEquipDTOPB {
+    required int64 playerEquipId = 1;
+    required int64 playerRoleId = 2;
+    required int64 equipId = 3;
+    optional int64 status = 4;
+}

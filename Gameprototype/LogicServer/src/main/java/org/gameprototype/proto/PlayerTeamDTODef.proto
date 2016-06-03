@@ -1,0 +1,8 @@
+option java_package = "org.gameprototype.proto.src";
+
+message PlayerTeamDTOPB {
+    required int64 id = 1;
+    required int64 leaderId = 2;
+    required string memberId = 3;
+    required string statuses = 4;
+}

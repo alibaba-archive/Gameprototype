@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 37b56a26995b1c747baea11c1720c392
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Archer001
+    100002: CATRigCATRigHead
+    100004: CATRigLArm1
+    100006: CATRigLArm2
+    100008: CATRigLArmCollarbone
+    100010: CATRigLArmPalm
+    100012: CATRigLLeg1
+    100014: CATRigLLeg2
+    100016: CATRigLLegAnkle
+    100018: CATRigPalmBone001
+    100020: CATRigPalmBone001 1
+    100022: CATRigPalmBone001Bone001
+    100024: CATRigPalmBone001Bone001 1
+    100026: CATRigPalmBone002
+    100028: CATRigPalmBone002 1
+    100030: CATRigPalmBone002Bone001
+    100032: CATRigPalmBone002Bone001 1
+    100034: CATRigPelvis
+    100036: CATRigRArm1
+    100038: CATRigRArm2
+    100040: CATRigRArmCollarbone
+    100042: CATRigRArmPalm
+    100044: CATRigRLeg1
+    100046: CATRigRLeg2
+    100048: CATRigRLegAnkle
+    100050: CATRigSpine
+    100052: CATRigSpine1
+    100054: CATRigSpine2
+    100056: CATRigSpine3
+    100058: CATRigSpine4
+    100060: //RootNode
+    100062: Warrior001
+    100064: Warrior002
+    100066: Warrior003
+    100068: CATRigLLegDigit11
+    100070: CATRigLLegDigit12
+    100072: CATRigLLegPlatform
+    100074: CATRigRLegDigit11
+    100076: CATRigRLegDigit12
+    100078: CATRigRLegPlatform
+    100080: Character001
+    100082: Head_slot
+    100084: LBracers_slot
+    100086: LShoulders_slot
+    100088: RBracers_slot
+    100090: RShoulders_slot
+    100092: ShieldBow_Slot
+    100094: WeaponSlot
+    400000: Archer001
+    400002: CATRigCATRigHead
+    400004: CATRigLArm1
+    400006: CATRigLArm2
+    400008: CATRigLArmCollarbone
+    400010: CATRigLArmPalm
+    400012: CATRigLLeg1
+    400014: CATRigLLeg2
+    400016: CATRigLLegAnkle
+    400018: CATRigPalmBone001
+    400020: CATRigPalmBone001 1
+    400022: CATRigPalmBone001Bone001
+    400024: CATRigPalmBone001Bone001 1
+    400026: CATRigPalmBone002
+    400028: CATRigPalmBone002 1
+    400030: CATRigPalmBone002Bone001
+    400032: CATRigPalmBone002Bone001 1
+    400034: CATRigPelvis
+    400036: CATRigRArm1
+    400038: CATRigRArm2
+    400040: CATRigRArmCollarbone
+    400042: CATRigRArmPalm
+    400044: CATRigRLeg1
+    400046: CATRigRLeg2
+    400048: CATRigRLegAnkle
+    400050: CATRigSpine
+    400052: CATRigSpine1
+    400054: CATRigSpine2
+    400056: CATRigSpine3
+    400058: CATRigSpine4
+    400060: //RootNode
+    400062: Warrior001
+    400064: Warrior002
+    400066: Warrior003
+    400068: CATRigLLegDigit11
+    400070: CATRigLLegDigit12
+    400072: CATRigLLegPlatform
+    400074: CATRigRLegDigit11
+    400076: CATRigRLegDigit12
+    400078: CATRigRLegPlatform
+    400080: Character001
+    400082: Head_slot
+    400084: LBracers_slot
+    400086: LShoulders_slot
+    400088: RBracers_slot
+    400090: RShoulders_slot
+    400092: ShieldBow_Slot
+    400094: WeaponSlot
+    4300000: Warrior001
+    4300002: Warrior003
+    4300004: Warrior002
+    4300006: Archer001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Archer001
+    13700002: Warrior001
+    13700004: Warrior002
+    13700006: Warrior003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

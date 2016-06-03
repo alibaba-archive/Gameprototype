@@ -1,0 +1,5 @@
+option java_package = "org.gameprototype.proto.src";
+
+message ScresDTOPB {
+
+}

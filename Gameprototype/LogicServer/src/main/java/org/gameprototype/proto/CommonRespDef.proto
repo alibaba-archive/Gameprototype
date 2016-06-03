@@ -1,0 +1,16 @@
+option java_package = "org.gameprototype.proto.src";
+message CommonResp {
+    enum RespCode{
+        SUCCESS = 0; // 成功
+        PARSE_REQ_PARAM_ERROR = 400; //解析参数错误
+        INTERNAL_ERROR = 500; //请求执行失败
+        LOGIN_ACCOUNT_UNEXIST = -1; //登录帐号不存在
+        LOGIN_PASSWORD_ERROR = -2; //密码错误，登录失败
+        LOGIN_ACCOUNT_ALREADY_ONLINE = -3; //帐号已登录，登录失败
+        REGISTER_ACCOUNT_ALREADY_EXISTS = -4; //帐号已存在,注册失败
+        REGISTER_ACCOUNT_NAME_ILLEGAL = -5; //帐号不合法，注册失败
+        REGISTER_ACCOUNT_PASSWORD_ILLEGAL = -6; //密码不合法，注册失败
+    }
+    required RespCode code = 1;
+    optional string info = 2;
+}

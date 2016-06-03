@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: 60b0c007919133f45a3c108d6cf8aced
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Fance01A
+    100002: Fance01B
+    100004: Fance01C
+    100006: Fance01D
+    100008: RoadSign01A
+    100010: RoadSign01B
+    100012: RoadSign01C
+    100014: RoadSign01D
+    100016: //RootNode
+    400000: Fance01A
+    400002: Fance01B
+    400004: Fance01C
+    400006: Fance01D
+    400008: RoadSign01A
+    400010: RoadSign01B
+    400012: RoadSign01C
+    400014: RoadSign01D
+    400016: //RootNode
+    2300000: Fance01A
+    2300002: Fance01B
+    2300004: Fance01C
+    2300006: Fance01D
+    2300008: RoadSign01A
+    2300010: RoadSign01B
+    2300012: RoadSign01C
+    2300014: RoadSign01D
+    3300000: Fance01A
+    3300002: Fance01B
+    3300004: Fance01C
+    3300006: Fance01D
+    3300008: RoadSign01A
+    3300010: RoadSign01B
+    3300012: RoadSign01C
+    3300014: RoadSign01D
+    4300000: Fance01A
+    4300002: RoadSign01B
+    4300004: RoadSign01A
+    4300006: RoadSign01C
+    4300008: RoadSign01D
+    4300010: Fance01C
+    4300012: Fance01B
+    4300014: Fance01D
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

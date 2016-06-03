@@ -1,0 +1,6 @@
+option java_package = "org.gameprototype.proto.src";
+
+message LoginDTOPB {
+    required string account = 1;
+    required string password = 2;
+}

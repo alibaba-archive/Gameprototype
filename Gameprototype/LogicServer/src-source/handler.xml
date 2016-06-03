@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mapManager" class="org.gameprototype.manager.HandlerManager">
+    </bean>
+    <bean id="userManager" class="org.gameprototype.manager.HandlerManager">
+    </bean>
+
+    <bean id="raidManager" class="org.gameprototype.manager.HandlerManager">
+    </bean>
+
+    <bean id="logicHandler" class="org.gameprototype.logic.LogicHandler">
+        <property name="login" ref="loginHandler"></property>
+        
+    </bean>
+
+    <bean id="loginHandler" class="org.gameprototype.logic.login.LoginHandler">
+        <property name="loginHandlerImpl" ref="loginHandlerImpl"></property>
+    </bean>
+   
+
+</beans>

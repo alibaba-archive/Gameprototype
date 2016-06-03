@@ -1,0 +1,4 @@
+option java_package = "org.gameprototype.proto.src";
+message TalkDTOPB {
+    required string content = 1;
+}

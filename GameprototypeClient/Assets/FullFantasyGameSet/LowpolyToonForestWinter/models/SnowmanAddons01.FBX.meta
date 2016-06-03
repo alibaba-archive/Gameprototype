@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 44f0061a9c926b84c95f20f80ef4dc84
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Brushwood001
+    100002: Brushwood002
+    100004: Brushwood003
+    100006: Carrot001
+    100008: Carrot002
+    100010: Coal001
+    100012: Pan
+    100014: Pot
+    100016: //RootNode
+    100018: Stewpan
+    100020: Giftbox001
+    100022: Giftbox002
+    100024: Giftbox003
+    400000: Brushwood001
+    400002: Brushwood002
+    400004: Brushwood003
+    400006: Carrot001
+    400008: Carrot002
+    400010: Coal001
+    400012: Pan
+    400014: Pot
+    400016: //RootNode
+    400018: Stewpan
+    400020: Giftbox001
+    400022: Giftbox002
+    400024: Giftbox003
+    2300000: Brushwood001
+    2300002: Brushwood002
+    2300004: Brushwood003
+    2300006: Carrot001
+    2300008: Carrot002
+    2300010: Coal001
+    2300012: Pan
+    2300014: Pot
+    2300016: Stewpan
+    2300018: Giftbox001
+    2300020: Giftbox002
+    2300022: Giftbox003
+    3300000: Brushwood001
+    3300002: Brushwood002
+    3300004: Brushwood003
+    3300006: Carrot001
+    3300008: Carrot002
+    3300010: Coal001
+    3300012: Pan
+    3300014: Pot
+    3300016: Stewpan
+    3300018: Giftbox001
+    3300020: Giftbox002
+    3300022: Giftbox003
+    4300000: Carrot001
+    4300002: Carrot002
+    4300004: Stewpan
+    4300006: Pan
+    4300008: Pot
+    4300010: Coal001
+    4300012: Brushwood001
+    4300014: Brushwood002
+    4300016: Brushwood003
+    4300018: Giftbox001
+    4300020: Giftbox002
+    4300022: Giftbox003
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

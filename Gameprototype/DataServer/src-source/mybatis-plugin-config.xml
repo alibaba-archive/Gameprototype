@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL Map Config 3.0//EN"  
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 别名 
+	<typeAliases>
+		<typeAlias type="com.taofang.smc.domain.user.User" alias="user"/>
+	</typeAliases>-->
+	
+	
+	<plugins>
+		<plugin interceptor="org.gameprototype.rwmybatis.RWPlugin">
+		</plugin>
+	</plugins>
+	 
+</configuration>

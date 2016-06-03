@@ -1,0 +1,9 @@
+This set is a collection of low poly fantasy weapons.
+
+Features:
+• 9 swords (3 models [86-128 tris], x3 textures [128x256])
+• 9 axes (3 models [155-177 tris], x3 textures [256x128])
+• 9 hammers (3 models [94-114 tris], x3 textures [256x256])
+• 9 bows (3 models [76-92 tris], x3 textures [64x256])
+
+All weapons have pivot in place where should be hand of your character. You can place weapons in bone hierarchy under hand bone, reset any transformations and it will work. 

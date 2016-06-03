@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+     http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd  
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+ 
+<!--  
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  destroy-method="close">
+        <property name="driverClassName" value="${gameprototype.sql.driverClassName}"></property>
+        <property name="url" value="${gameprototype.sql.url}"></property>
+        <property name="username" value="${gameprototype.sql.user}"></property>
+        <property name="password" value="${gameprototype.sql.password}"></property>
+        <property name="validationQuery" value="select 1"></property>
+        <property name="testOnBorrow" value="true"></property>
+    </bean>
+    -->
+    <!--  
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://hrds7z7rovo6l1p1mtmsw7.mysql.rds.aliyuncs.com:3306/gameprototype"></property>
+        <property name="username" value="gameuser"></property>
+        <property name="password" value="gameprototype"></property>
+       
+        <property name="validationQuery" value="select 1"></property>
+       
+        <property name="testOnBorrow" value="true"></property>
+    </bean>
+    -->
+    <!--  
+    <bean id="dataSource" class="org.gameprototype.datasource.DynamicDataSource">
+		<property name="targetDataSources">
+			<map key-type="java.lang.String">
+				<entry key="r" value-ref="ds_r" />
+				<entry key="w" value-ref="ds_w" />
+			</map>
+		</property>
+		<property name="defaultTargetDataSource" ref="ds_r" />
+		
+	</bean>
+ -->
+	<bean id="dataSource" class="org.gameprototype.rwmybatis.RoutingDataSource">
+	    <property name="targetDataSources">
+	         <map key-type="java.lang.String">
+	             <entry key="read" value-ref="ds_r"></entry>
+	             <entry key="write" value-ref="ds_w"></entry>
+	         </map>
+	    </property>
+	    <property name="defaultTargetDataSource" ref="ds_r"></property>
+	</bean>
+	<bean id="ds_r" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		>
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql://rds7z7rovo6l1p1mtmsw7.mysql.rds.aliyuncs.com:3306/read_echo"></property>
+        <property name="user" value="prototype"></property>
+        <property name="password" value="prototype"></property>
+       <!-- 
+		<property name="maxActive" value="500" />
+		<property name="maxIdle" value="200" />
+		<property name="maxWait" value="20000" />
+		<property name="timeBetweenEvictionRunsMillis" value="3600000" />
+		<property name="testWhileIdle" value="true" />
+		<property name="validationQuery" value="select 1 from dual" />
+		 -->
+	</bean>
+	<!--写数据源 -->
+	<bean id="ds_w" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		>
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql://rds7z7rovo6l1p1mtmsw7.mysql.rds.aliyuncs.com:3306/gameprototype"></property>
+        <property name="user" value="gameuser"></property>
+        <property name="password" value="gameprototype"></property>
+       <!-- 
+		<property name="maxActive" value="500" />
+		<property name="maxIdle" value="200" />
+		<property name="maxWait" value="20000" />
+		<property name="timeBetweenEvictionRunsMillis" value="3600000" />
+		<property name="testWhileIdle" value="true" />
+		<property name="validationQuery" value="select 1 from dual" />
+		-->
+	</bean>
+<!--  
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean id="sqlMap" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation" value="classpath:org/gameprototype/dao/sqlmap/SqlMapConfig.xml"></property>
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="accountDAO" class="org.gameprototype.dao.impl.AccountDAOImpl">
+        <property name="sqlMapClient" ref="sqlMap"></property>
+    </bean>
+    <bean id="playerModelDAO" class="org.gameprototype.dao.impl.PlayerModelDAOImplOImpl">
+        <property name="sqlMapClient" ref="sqlMap"></property>
+    </bean>
+-->
+<!-- add by echo.ch 将ibatis改为myibatis -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+
+<tx:annotation-driven transaction-manager="transactionManager" />
+<!-- 
+
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource"      ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-plugin-config.xml" />
+		<property name="mapperLocations" value="classpath*:org/gameprototype/dao/sqlmap/*Mapper.xml" />
+	</bean>
+
+
+
+
+	<bean name="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="org.gameprototype.dao.mapper" />
+		<property name="sqlSessionTemplateBeanName" value="sqlSessionTemplate" />
+	</bean>
+	
+
+<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate"> 
+      <constructor-arg ref="sqlSessionFactory" />
+      
+    </bean>
+ -->	
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource"      ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-plugin-config.xml" />
+		<property name="mapperLocations" value="classpath*:org/gameprototype/dao/sqlmap/*Mapper.xml" />
+	</bean>
+
+
+
+<!--  
+	<bean name="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="org.gameprototype.dao.mapper" />
+		<property name="sqlSessionTemplateBeanName" value="sqlSessionTemplate" />
+	</bean>
+-->	
+	<bean name="mapperScannerConfigurer" class="org.gameprototype.rwmybatis.RWMapperScannerConfigurer">
+		<property name="basePackage" value="org.gameprototype.dao.mapper" />
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
+	</bean>
+
+<bean id="sqlSessionTemplate" class="org.gameprototype.rwmybatis.RWSqlSessionTemplate"> 
+      <constructor-arg ref="sqlSessionFactory" />
+      
+    </bean>
+
+	<!-- JDBC模板 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+</beans>

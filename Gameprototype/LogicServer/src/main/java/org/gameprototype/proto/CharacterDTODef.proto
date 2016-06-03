@@ -1,0 +1,9 @@
+option java_package = "org.gameprototype.proto.src";
+
+message CharacterDTOPB {
+    required int64 accountId = 1;
+    required int64 playerId = 2;
+    required int64 sresId = 3;
+    required int64 mapId = 4;
+    required int64 termId = 5;
+}
