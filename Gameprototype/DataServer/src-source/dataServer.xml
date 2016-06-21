@@ -16,6 +16,4 @@
         <constructor-arg name="name" value="mapExcutor"></constructor-arg>
     </bean>
     <bean id="schedule" class="org.gameprototype.tool.impl.ScheduleImpl"/>
-    <!--<bean id="accountCache" class="org.gameprototype.cache.account.impl.AccountCacheImpl"/>-->
-    <!--<bean id="redisTool" class="org.gameprototype.base.redis.RedisTools"/>-->
 </beans>

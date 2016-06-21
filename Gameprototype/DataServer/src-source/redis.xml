@@ -24,18 +24,10 @@
 	<!-- master连接池参数 -->
 	 
 	<bean id="masterPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-			<!--  后期我看下怎么加  modify by echo.ch		<property name="maxActive"  value="50"/> 
-		<property name="maxIdle" value="20"/>
-		<property name="maxWait" value="10000"/>
-		-->
 	</bean>
 	
 	<!-- slave连接池参数 -->
 	<bean id="slavePoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-	<!--  		<property name="maxActive"  value="50"/> 
-		<property name="maxIdle" value="20"/>
-		<property name="maxWait" value="10000"/>
-		-->
 	</bean>
 	
 	<!-- 主机地址 -->
@@ -71,7 +63,7 @@
 		<property name="usePool" value="true"></property>  
 		<!-- 需要修改 -->
 		<property name="hostName" value="ip" />
-		<property name="port" value="端口" />
+		<property name="port" value="port" />
 		<property name="database" value="3" />
         <constructor-arg index="0" ref="jedisPool" />  
 	</bean>
